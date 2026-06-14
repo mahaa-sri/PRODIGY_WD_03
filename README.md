@@ -1,10 +1,10 @@
 # PRODIGY_WD_03
 
-## Tic Tac Toe Pro
+# Tic Tac Toe Pro
 
-A modern and interactive Tic Tac Toe web application developed using HTML, CSS, and JavaScript.
+A interactive Tic Tac Toe web application developed using HTML, CSS, and JavaScript.
 
-### Features
+# Features
 
 * Player vs Player Mode
 * Player vs Computer Mode
@@ -18,21 +18,19 @@ A modern and interactive Tic Tac Toe web application developed using HTML, CSS, 
 * Responsive Design
 * Modern Glassmorphism UI
 
-### Technologies Used
+# Technologies Used
 
 * HTML5
 * CSS3
 * JavaScript (ES6)
 
-### Live Demo
+# Live Demo
+https://mahaa-sri.github.io/PRODIGY_WD_03/
 
-Add your GitHub Pages link here after deployment.
+# GitHub Repository
+https://github.com/mahaa-sri/PRODIGY_WD_03
 
-### GitHub Repository
-
-Add your repository link here after publishing.
-
-### Developed By
+# Developed By
 
 Mahaa Sri
 
