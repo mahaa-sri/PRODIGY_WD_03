@@ -8,7 +8,7 @@ const aiBtn = document.getElementById("ai");
 const scoreX = document.getElementById("scoreX");
 const scoreO = document.getElementById("scoreO");
 const draws = document.getElementById("draws");
-const winLine = document.getElementById("winLine");
+
 const easyBtn = document.getElementById("easy");
 const mediumBtn = document.getElementById("medium");
 const hardBtn = document.getElementById("hard");
@@ -84,7 +84,7 @@ function startGame() {
         cell.textContent = "";
         cell.classList.remove("x", "o", "winner");
     });
-    winLine.style.display = "none";
+   
     statusText.textContent = "🔵 Player X's Turn";
 }
 /* Handle Cell Click */
@@ -113,7 +113,7 @@ function checkResult() {
             cells[a].classList.add("winner");
             cells[b].classList.add("winner");
             cells[c].classList.add("winner");
-            drawWinningLine(combination);
+          
             break;
         }
     }
@@ -169,7 +169,7 @@ restartBtn.addEventListener("click", () => {
     } else if (gameMode === "ai") {
         modeDisplay.textContent = "Mode: Player vs Computer";
     }
-    winLine.style.display = "none";
+   
 });
 /* New Game */
 newGameBtn.addEventListener("click", () => {
@@ -188,7 +188,7 @@ newGameBtn.addEventListener("click", () => {
     });
     modeDisplay.textContent = "Mode: Not Selected";
     statusText.textContent = "Choose a Game Mode";
-    winLine.style.display = "none";
+   
 });
 /* AI Move */
 function computerMove() {
@@ -309,64 +309,5 @@ function celebrateWin() {
             }
         });
     }, 250);
-}function drawWinningLine(combination){
-    const positions = {
-        "0,1,2":{
-            top:"16%",
-            left:"0%",
-            width:"100%",
-            rotate:"0deg"
-        },
-        "3,4,5":{
-            top:"50%",
-            left:"0%",
-            width:"100%",
-            rotate:"0deg"
-        },
-        "6,7,8":{
-            top:"84%",
-            left:"0%",
-            width:"100%",
-            rotate:"0deg"
-        },
-        "0,3,6":{
-            top:"50%",
-            left:"16%",
-            width:"100%",
-            rotate:"90deg"
-        },
-        "1,4,7":{
-            top:"50%",
-            left:"50%",
-            width:"100%",
-            rotate:"90deg"
-        },
-        "2,5,8":{
-            top:"50%",
-            left:"84%",
-            width:"100%",
-            rotate:"90deg"
-        },
-        "0,4,8":{
-            top:"50%",
-            left:"0%",
-            width:"140%",
-            rotate:"45deg"
-        },
-        "2,4,6":{
-            top:"50%",
-            left:"0%",
-            width:"140%",
-            rotate:"-45deg"
-        }
-    };
-    const key = combination.join(",");
-    const line = positions[key];
-    if(!line) return;
-    winLine.style.display = "block";
-    winLine.style.top = line.top;
-    winLine.style.left = line.left;
-    winLine.style.width = line.width;
-    winLine.style.transform =
-    `translateY(-50%) rotate(${line.rotate})`;
 }
+ 
