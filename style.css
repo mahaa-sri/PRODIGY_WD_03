@@ -232,19 +232,7 @@ button{
     background:#ef4444;
     color:white;
 }
-#winLine{
-    position:absolute;
-    background:#00ff95;
-    box-shadow:
-    0 0 10px #00ff95,
-    0 0 20px #00ff95,
-    0 0 40px #00ff95;
 
-    height:6px;
-    border-radius:10px;
-    display:none;
-    z-index:10;
-}
 .selected-difficulty{
     transform:scale(1.08);
     box-shadow:
